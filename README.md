@@ -1,5 +1,5 @@
 # Scripts Take Blip 🎉
-###### Scripts for help others devs
+###### Scripts for help devs in [blip](https://portal.blip.ai/application)
 
 # Script Validation Input - JS
 ```ruby
