@@ -197,4 +197,87 @@ const matchKey = (options, input) => {
         ]
     }
 ```
+# Component Reply + Button + Body - JSON
+```ruby
+{
+   "recipient_type":"individual",
+   "type":"interactive",
+   "interactive":{
+      "type":"button",
+      "header":{
+         "type":"image",
+         "text":"image car",
+         "image":{
+            "link":"{{imagevehicleAbandono}}"
+         }
+      },
+      "body":{
+         "text":"Jeep {{fullDescription}}
 
+O motor mais potente da categoria está te esperando no Jeep {{fullDescription}}! Faça parte da família Jeep a partir de {{vehiclePrice}}.
+
+Agora que você sabe disso, que tal conhecer as condições conversando com uma concessionária próxima?
+
+Preço e disponibilidade sujeitos a variação em cada estado."
+      },
+      "action":{
+         "buttons": [
+            {
+               "type":"reply",
+               "reply":{
+                  "id":"ver concessionaria",
+                  "title":"Ver concessionária "
+               }
+            },
+            {
+               "type":"reply",
+               "reply":{
+                  "id":"outros assuntos",
+                  "title":"Outros assuntos"
+               }
+            }
+         ]
+      }
+   }
+}
+```
+# Component Button + Image - JSON
+```ruby
+{
+  "recipient_type": "individual",
+  "type": "interactive",
+  "interactive": {
+    "type": "button",
+    "header": {
+      "type": "image",
+      "text": "take image",
+      "image": {
+        "link": "https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/iz9vdmxp4f/iz9vdmxp4f.png"
+      }
+    },
+
+    "body": {
+      "text": "*Chegou a nova era do extraordinário*⚡
+Dê a partida e entenda porque o Jeep Compass 4xe é perfeito para você que é amante da natureza."
+    },
+    "action": {
+      "buttons": [
+        {
+          "type": "reply",
+          "reply": {
+            "id": "dar a partida",
+            "title": "Dar a partida"
+          }
+        },
+        {
+          "type": "reply",
+          "reply": {
+            "id": "saiba mais",
+            "title": "Saiba mais"
+          }
+        }
+      ]
+    }
+  }
+}
+```
