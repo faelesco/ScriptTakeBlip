@@ -281,3 +281,23 @@ Dê a partida e entenda porque o Jeep Compass 4xe é perfeito para você que é 
   }
 }
 ```
+
+# Script for builder in blip "Console" - JS
+```ruby
+// LIMPAR LINHAS
+document.querySelector('div#canvas').classList.toggle('hide-conns');
+
+// MUDAR COR DE FUNDO
+document.getElementById('canvas').style.backgroundColor = "white";
+
+// MUDAR COR DE TODOS OS BLOCOS
+let htmlCollection1 = document.getElementsByClassName('diagram-node');
+let array = Array.prototype.slice.call(htmlCollection1);
+let listId = [];
+array.forEach(e => {
+    listId.push(e.id);
+});
+listId.forEach(e => {
+    document.getElementById(e).style.background = '#303030';
+});
+```
